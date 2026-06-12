@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Young+Serif&display=swap');
+
+:root{
+    --clr-white: hsl(0, 0%, 100%);
+    --clr-stone-100: hsl(30, 54%, 90%);
+    --clr-stone-150: hsl(30, 18%, 87%);
+    --clr-stone-600: hsl(30, 10%, 34%);
+    --clr-stone-900: hsl(24, 5%, 18%);
+    --clr-brown-800: hsl(14, 45%, 36%);
+    --clr-rose-800: hsl(332, 51%, 32%);
+    --clr-rose-50: hsl(330, 100%, 98%);
+
+    --font-family: 'Outfit', sans-serif;
+    --font-family-heading: 'Young Serif', serif;
+}
+
+*,*::before,*::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: var(--font-family);
+    font-size: 16px;
+    color: var(--clr-stone-600);
+    background-color: var(--clr-stone-100);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+
+main{
+    max-width: 736px;
+    width: 100%;
+    background-color: var(--clr-white);
+    border-radius: 8px;
+    padding: 30px;
+    
+}
+
+.recipe-image{
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 24px;
+}
+
+h1{
+    font-family: var(--font-family-heading);
+    font-size: 32px;
+    color: var(--clr-stone-900);
+    margin-bottom: 16px;
+}
+
+main p{
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 24px;
+}
+
+.prep-section{
+    background-color: var(--clr-rose-50);
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 24px;
+}
+
+.prep-section h3{
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 24px;
+    color: var(--clr-rose-800);
+    margin-bottom: 12px;
+}
+
+.prep-section ::marker{
+    color: var(--clr-rose-800);
+}
+
+h2{
+    font-family: var(--font-family-heading);
+    font-size: 28px;
+    color: var(--clr-brown-800);
+    margin-bottom: 16px;    
+}
+
+ul, ol {
+  padding-left: 24px;
+}
+
+li{
+    margin-bottom: 8px;
+}
+
+li::marker{
+    color: var(--clr-brown-800);
+}
+
+main ol li::marker {
+  color: var(--clr-brown-800);
+  font-weight: bold;
+}
+
+hr{
+    border: none;
+    border-top: 1px solid var(--clr-stone-150);
+    margin: 24px 0;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 16px;
+}
+
+table th:first-child, table td:first-child {
+    padding-left: 0;
+} 
+table th, table td{
+    padding: 12px 24px;
+    text-align: left;
+    border-bottom: 1px solid var(--clr-stone-150);
+}
+
+table th{
+    font-family: var(--font-family);
+    font-weight: 400;
+    color: var(--clr-stone-600);
+    width: 50%;
+}
+
+table td{
+    color: var(--clr-brown-800);
+}
+
+table tr:last-child td, table tr:last-child th{
+    border-bottom: none;
+}
+
+@media (max-width: 600px) {
+    body{
+        background-color: var(--clr-white);
+        padding: 0;
+    }
+    main{
+        border-radius: 0;
+        padding:0;
+    }
+    .recipe-image{
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .recipe-content{
+        padding: 20px;
+    }
+}
