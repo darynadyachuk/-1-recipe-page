@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght=400;600;700&family=Young+Serif&display=swap');
 
 :root{
     --clr-white: hsl(0, 0%, 100%);
@@ -22,7 +22,7 @@
 
 body{
     font-family: var(--font-family);
-    font-size: 16px;
+    font-size: 1rem;
     color: var(--clr-stone-600);
     background-color: var(--clr-stone-100);
     display: flex;
@@ -30,69 +30,69 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    padding: 40px 20px;
+    padding: 2.5rem 1.25rem;
 }
 
 main{
-    max-width: 736px;
+    max-width: 46rem;
     width: 100%;
     background-color: var(--clr-white);
-    border-radius: 8px;
-    padding: 30px;
-    
+    border-radius: 0.5rem;
+    padding: 1.875rem;
 }
 
 .recipe-image{
     width: 100%;
-    border-radius: 8px;
-    margin-bottom: 24px;
+    border-radius: 0.5rem;
+    margin-bottom: 1.5rem;
 }
 
 h1{
     font-family: var(--font-family-heading);
-    font-size: 32px;
+    font-size: 2rem;
     color: var(--clr-stone-900);
-    margin-bottom: 16px;
+    margin-bottom: 1rem;
 }
 
 main p{
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 1.6;
-    margin-bottom: 24px;
+    margin-bottom: 1.5rem;
 }
 
 .prep-section{
     background-color: var(--clr-rose-50);
-    padding: 20px;
-    border-radius: 8px;
-    margin-bottom: 24px;
+    padding: 1.25rem;
+    border-radius: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+h2{
+    font-family: var(--font-family-heading);
+    font-size: 1.5rem;
+    color: var(--clr-brown-800);
+    margin-bottom: 1.5rem;    
 }
 
 .prep-section h2{
     font-family: var(--font-family);
     font-weight: 600;
-    font-size: 24px;
+    font-size: 1.5rem;
     color: var(--clr-rose-800);
-    margin-bottom: 12px;
+    margin-bottom: 0.75rem;
 }
 
 .prep-section ::marker{
     color: var(--clr-rose-800);
 }
 
-h2{
-    font-family: var(--font-family-heading);
-    font-size: 28px;
-    color: var(--clr-brown-800);
-    margin-bottom: 16px;    
-}
 
 ul, ol {
-  padding-left: 24px;
+    padding-inline-start: 1.5rem;
 }
 
 li{
-    margin-bottom: 8px;
+    margin-bottom: 0.5rem;
 }
 
 li::marker{
@@ -100,27 +100,28 @@ li::marker{
 }
 
 main ol li::marker {
-  color: var(--clr-brown-800);
-  font-weight: bold;
+    color: var(--clr-brown-800);
+    font-weight: bold;
 }
 
 hr{
     border: none;
     border-top: 1px solid var(--clr-stone-150);
-    margin: 24px 0;
+    margin: 1.5rem 0;
 }
 
 table{
     width: 100%;
     border-collapse: collapse;
-    margin-top: 16px;
+    margin-top: 1rem;
 }
 
 table th:first-child, table td:first-child {
-    padding-left: 0;
+    padding-inline-start: 1.5rem;
 } 
+
 table th, table td{
-    padding: 12px 24px;
+    padding: 0.75rem 1.5rem;
     text-align: left;
     border-bottom: 1px solid var(--clr-stone-150);
 }
@@ -140,14 +141,14 @@ table tr:last-child td, table tr:last-child th{
     border-bottom: none;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 48em) {
     body{
         background-color: var(--clr-white);
         padding: 0;
     }
     main{
         border-radius: 0;
-        padding:0;
+        padding: 0;
     }
     .recipe-image{
         width: 100%;
@@ -155,6 +156,6 @@ table tr:last-child td, table tr:last-child th{
     }
 
     .recipe-content{
-        padding: 20px;
+        padding: 1.25rem;
     }
 }
